@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#This prints out a list and uses parameter expansion
+
+list=$(ls)
+
+for i in $list;
+do
+    echo $i | cut -d '-'  -f2
+done
