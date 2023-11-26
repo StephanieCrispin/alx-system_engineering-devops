@@ -2,10 +2,12 @@
 #A bash script that does like the rest except it prints 
 #Hi when on the 9th loop
 
-for (( i=0;i<10;i++ ))
+i=0
+while [ $i -lt 10 ]
 do
     echo "Best School"
     if [ $i == 8 ];then
         echo "Hi"
     fi
+    ((i++))
 done
