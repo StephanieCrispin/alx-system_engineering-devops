@@ -8,6 +8,8 @@ read -p "Enter your commit message: " commit_message
 
 git commit -m $commit_message
 
+echo $commit_message
+
 git push
 
 echo "Git workflow completed successfully"
