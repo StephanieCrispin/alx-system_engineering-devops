@@ -1,10 +1,11 @@
 #!/usr/bin/env sh
-
-git status
+git status 
 
 git add .
 
-# commit_message="$*"
+git status
+
+echo "Changes have been added to commit"
 
 read -p "Enter your commit message: " commit_message
 
