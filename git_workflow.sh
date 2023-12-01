@@ -4,7 +4,7 @@ git status
 
 git add .
 
-commit_message="$*"
+# commit_message="$*"
 
 read -p "Enter your commit message: " commit_message
 
