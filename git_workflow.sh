@@ -3,6 +3,8 @@ git status
 
 git add .
 
+echo "git status after adding changes"
+
 git status
 
 echo "Changes have been added to commit"
