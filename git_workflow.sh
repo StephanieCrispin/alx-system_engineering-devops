@@ -8,12 +8,7 @@ commit_message="$*"
 
 read -p "Enter your commit message: " commit_message
 
-
-echo $commit_message
-
 git commit -m "$commit_message"
-
-# echo $commit_message
 
 git push
 
