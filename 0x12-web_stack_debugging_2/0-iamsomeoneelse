@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Access name of user as first argument
+user='$1'
+# Switch to user and print
+sudo -u "$user" whoami

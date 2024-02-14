@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# open the configuration file for Ngnix
+sed -i "s/#user www-data/user nginx/" /etc/nginx/nginx.conf
+
+# start server on 8080 by default
+sed -i "s/80/8080/g" /etc/nginx/sites-available/default
+
+# change permissions so only root user has complete access, group and others have only read
+chmod 644 /etc/nginx/nginx.conf
+
+# terminate all apache processes
+pkill apache2
+
+# login as nginx and restart nginx service
+sudo -u nginx and service nginx start
