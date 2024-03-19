@@ -20,3 +20,4 @@ def number_of_subscribers(subreddit):
     num_subs = data.get("subscribers")
 
     return num_subs
+    
